@@ -1,0 +1,734 @@
+
+body{
+    margin: 0;
+    background-color: #F7F7F7;
+}
+.container{
+    height: 100vh;
+    background-color: rgb(98, 98, 100);
+    overflow: hidden;
+}
+.img-caption{
+    width: 85%;
+    position: relative;
+    margin: auto;
+    height: 70%;
+}
+.inner-div{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.background-image{
+    background-image: url('../images/foodsense-1.jpg');
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    opacity: 0.5;
+}
+.navigation{
+    position: relative;
+    margin-top: 65px;
+    width:  100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 60%;
+    margin: auto;
+    /* margin-left: 20%; */
+    justify-content: flex-end;
+}
+.navbrand{
+    width: 50%;
+}
+.nav-items{
+    margin-left: 10%;
+    padding-top: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.logo-img{
+    width: 240px;
+    position: relative;
+}
+.nav-item{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-item-btn{
+    margin-left: 40px;
+    padding: 15px 25px;
+    font-family: 'Patua One', display;
+    font-size: 1.2rem;
+    background-color: #06752E;
+    color: white;
+    border: 1px solid #06752E;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+.nav-item-btn:hover{
+    background-color: #00a569;
+    border: 1px solid #00a569;
+    cursor: pointer;
+}
+/* .container1-bottom{
+    position: absolute;
+    bottom: 50px;
+    right: 400px;
+    display: block;
+} */
+.header-1{
+    color: white;
+    font-family: 'Patua One', display;
+    font-weight: 400;
+    font-size: 7rem;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+.header4-1{
+    color: #61CE70;
+    font-family: 'Patua One', display;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    /* margin-bottom: 120px; */
+}
+.nav-item-btn-2{
+    padding: 15px 25px;
+    font-family: 'Patua One', display;
+    font-size: 1.2rem;
+    background-color: #06752E;
+    color: white;
+    border: 1px solid #06752E;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+.nav-item-btn-2:hover{
+    background-color: #00a569;
+    border: 1px solid #00a569;
+    cursor: pointer;
+}
+.latest-articles{
+    background-color: white;
+    display: inline-block;
+    margin-top: -50px;
+    position: relative;
+    left: 7%;
+    width: 30%;
+}
+.protrude{
+    padding: 1% 3%;
+}
+.latest{
+    font-family: 'Patua One', display;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.para{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+hr{
+    color: #06752E;
+    width: 12%;
+    border-width: 5px;
+    border-style: solid none none;
+    margin-left: 0;
+}
+.middle-container{
+   width: 95%;
+   margin: auto;
+}
+.gallery-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 70px auto 10px;
+    justify-content: center;
+}
+.card{
+    background-color: #F7F7F7;
+    box-sizing: border-box;
+    width: 28%;
+    margin: 35px;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+}
+.card-img-body{
+    height: 220px;
+}
+.card-img{
+    /* width: 100%; */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+.card-body{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-bottom: 0;
+}
+.gallery-h2{
+    margin-top: 0%;
+    padding: 9% 5% 3%;
+    margin-bottom: 0;
+    color: #06752E;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.gallery-para{
+    padding: 0 5%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.gallery-btn{
+    background-color: #4E5652;
+    color: white;
+    padding: 17px 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #4E5652;
+    border-radius: 6px;
+    transition: .2s;
+}
+.gallery-btn:hover{
+    cursor: pointer;
+    background-color: black;   
+}
+.card-img:hover{
+    transform: scale(1.1);
+}
+.blog-btn{
+    padding: 15px 35px;
+    font-family: 'Patua One', display;
+    font-size: 1.2rem;
+    background-color: #06752E;
+    color: white;
+    border: 1px solid #06752E;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: .2s;
+    margin-right: 8%;
+}
+.blog-btn:hover{
+    background-color: #00a569;
+    border: 1px solid #00a569;
+    cursor: pointer;
+}
+.button-div{
+    text-align: right;
+}
+.taste-makers{
+    width: 47%;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.taste-makers-text{
+    padding: 1px 4% 45px;
+}
+.taste-makers-header{
+    font-family: 'Patua One', display;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 10px 0 6px;
+}
+.taste-makers-para{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.search{
+    width: 95%;
+    margin: 50px auto;
+}
+.search-box{
+    width: 65%;
+    height: 49px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    border: 1px solid #dfdfdf;
+    border-right: none;
+    margin-left: 0.5%;
+    padding-left: 1rem;
+}
+.browse{
+    background-color: #00000013;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    line-height: 3rem;
+    width: 13%;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    text-align: left;
+    padding-left: 1%;
+    transition: .2s;
+}
+.browse:hover{
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+.btn-img{
+    float: right;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+.newest{
+    background-color: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    height: 53px;
+    border: 1px solid #dfdfdf;
+    text-align: left;
+    padding-left: 1%;
+    padding-bottom: 0;
+    width: 15%;
+    border-left: none;
+    margin-left: -4px;
+    transition: .2s;
+}
+.newest:hover{
+    cursor: pointer;
+    background-color: #F0F0F0;
+}
+.btn-img-2{
+    float: right;
+    padding-right: 1rem;
+}
+.search-btn{
+    background-color: #1bae70;
+    width: 3.5rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid #1bae70;
+    margin-left: -4px;
+    padding-top: 0;
+}
+.search-btn:hover{
+    cursor: pointer;
+    background-color: #16A780;
+    border: 1px solid #16A780 ;
+}
+.input-bar{
+   width: 90%;
+   margin-left: 5%;
+}
+.food{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 20px auto;
+}
+.toast, .soup, .potato{
+    box-sizing: border-box;
+    width: 28%;
+    margin: 1.5%;
+    background-color: white;
+    box-shadow: 0 2px 3px #dfdfdf;
+    border-radius: 10px;
+    height: 530px;
+    transition: .2s;
+}
+.toast-img, .soup-img, .potato-img{
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+.caption{
+    text-align: center;
+    padding: 0 3%;
+}
+.food-header{
+    color: #4E5652;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+}
+.food-para{
+    color: #4E5652;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.food-para-2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+hr.food-hr{
+    border-style: solid none none;
+    width: 12%;
+    border-width: 7px;
+    margin: auto;
+    border-radius: 20px;
+    color: #dfdfdf;
+    margin-bottom: 20px;
+    transition: .2s;
+}
+.toast:hover, .soup:hover, .potato:hover{
+    cursor: pointer;
+    margin-top: 19px;
+    box-shadow: 0 2px 5px #dfdfdf;
+}
+
+.toast:hover hr.food-hr, .soup:hover hr.food-hr, .potato:hover hr.food-hr{
+    width: 22%;
+    color: #00a569;
+}
+.Subscribe{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 2px 50px 70px #dfdfdf;
+}
+.parallax{
+    background-image: url('../images/parallax.jpg');
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+.parallax-form{
+    width: 50%;
+}
+.form-header{
+    padding-left: 10%;
+}
+.form-header, .follow-header, .follow-2, .meta, .follow-3, .about-header{
+    color: #14261C;
+    font-family: 'Patua One', display;
+    line-height: 1;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.form-para{
+    color: #4E5652;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 10%;
+}
+.name, .email{
+    color: #4E5652;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.form{
+    padding-left: 10%;
+}
+.first, .last{
+    background-color: #F0F0F0;
+    border: 1px solid #dfdfdf;
+    height: 2.7rem;
+    width: 30%;
+}
+.form-hr{
+    width: 60px;
+   margin-left: 10%;
+}
+.last{
+    margin-left: 2%;
+}
+.email-input, .follow-email{
+    background-color: #F0F0F0;
+    border: 1px solid #dfdfdf;
+    height: 2.7rem;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+.email-input{
+    width: 70%;
+}
+.submit{
+    padding: 15px 25px;
+    font-family: 'Patua One', display;
+    font-size: 1.2rem;
+    background-color: #06752E;
+    color: white;
+    border: 1px solid #06752E;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: .2s;
+    margin-bottom: 50px;
+}
+.submit:hover{
+    background-color: #00a569;
+    border: 1px solid #00a569;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 100px auto 10px;
+}
+.follow, .about{
+    width: 46%;
+    padding: 2%;
+}
+.follow-header, .meta, .follow-2, .follow-3{
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+}
+.about-header{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+.follow-2, .follow-3{
+    margin-top: 7%;
+    margin-bottom: 8%;
+}
+.follow-email{
+    width: 65%;
+}
+.follow-links, .about-links{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #4E5652;
+    line-height: 1.7;
+}
+.about-links{
+    color: black;
+    font-size: 1.17rem;
+}
+.about{
+    text-align: center;
+}
+.icons{
+    background-color: #14261C;
+    color: white;
+    line-height: 1;
+    padding: 11px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    margin-left: 1%;
+}
+.privacy{
+    display: inline-block;
+    text-align: left;
+}
+.icon-buttons{
+    float: right;
+    width: 35%;
+}
+.copyright{
+    text-align: center;
+    font-size: 1.17rem;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 13px;
+}
+.div{
+    /* height: 100%; */
+    width: 50%;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 2211px){
+    .middle-container, .search, footer{
+        width: 60%;
+    }
+}
+@media (min-width: 1478px) and (max-width: 2210px){
+    .middle-container, .search, footer{
+        width: 80%;
+    }
+    .latest-articles{
+        width: 50%;
+    }
+}
+@media (min-width:1405px) and (max-width:1663px){
+    .middle-container, .search, footer{
+        width: 100%;
+    }
+    .toast, .soup, .potato{
+        width: 30%;
+}
+.latest-articles{
+    width: 50%;
+    margin-left: 1%;
+}
+}
+@media (min-width:1230px) and (max-width:1404px){
+    .middle-container, .search, footer{
+        width: 100%;
+    }
+    .latest-articles{
+        width: 50%;
+        margin-left: 0.2%;
+    }
+    .card{
+        margin: 25px;
+    }
+    .toast, .soup, .potato{
+        width: 30%;
+    }
+    .input-bar{
+        width: 95%;
+        margin-left: 3%;
+    }
+    .search-box{
+        width: 64%;
+    }
+    .newest{
+        width: 15%;
+    }
+}
+@media (min-width: 944px) and (max-width: 1219px){
+    .toast, .soup, .potato{
+        width: 45%;
+    }
+    .input-bar{
+        width: 95%;
+        margin-left: 3%;
+    }
+    .search-box{
+        width: 62%;
+    }
+    .newest{
+        width: 15%;
+    }
+}
+@media (min-width:920px) and (max-width:1229px){
+    .middle-container, .search, footer{
+        width: 100%;
+    }
+    .card{
+        width: 40%;
+    }
+    .latest-articles{
+        width: 50%;
+    }
+}
+@media (max-width: 1110px) {
+    .follow, .about{
+        width: 100%;
+    }
+    .about{
+        text-align: left;
+    }
+}
+@media (max-width: 1190px) {
+    .nav-items{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 910px){
+    .middle-container, .search, footer{
+        width: 95%;
+    }
+    .latest-articles{
+        width: 70%;
+    }
+    .taste-makers{
+        width: 70%;
+        margin-left: 0;
+        margin-top: -10px;
+        position: relative;
+        z-index: 1;
+    }
+    .container{
+        height: 75vh;
+    }
+    .background-image{
+        height: 75vh;
+    }
+    .logo-img{
+        width: 130px;
+    }
+    .card{
+        width: 100%;
+    }
+    .header-1, .header4-1, .btn-div{
+        visibility: hidden;
+    }
+    .toast, .soup, .potato{
+        width: 95%;
+        height: 450px;
+    }
+    .soup{
+        height: 530px;
+    }
+    .input-bar{
+        width: 95%;
+        margin-left: 3%;
+    }
+    .browse{
+        width: 100%;
+    }
+    .search-box{
+        width: 96.2%;
+        margin-top: 2%;
+        border-right: 1px solid #dfdfdf;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .newest{
+        width: 69%;
+        margin-top: 2%;
+        margin-right: 2%;
+        border-left: 1px solid #dfdfdf;
+        margin-left: 0;
+    }
+    .search-btn{
+        width: 29%;
+    }
+    .parallax{
+        width: 20%;
+        background-position: 15% 10%;
+        height: 531px;
+        width: 100%;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .div{
+        width: 20%;
+    }
+    .parallax-form{
+        width: 80%;   
+    }
+    .first, .last{
+        width: 40%;
+    }
+}
